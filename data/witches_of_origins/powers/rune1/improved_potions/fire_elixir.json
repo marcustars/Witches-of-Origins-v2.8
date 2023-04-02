@@ -1,0 +1,32 @@
+{
+    "hidden": true,
+    "type": "origins:item_on_item",
+    "using_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:amethyst_shard"
+        }
+    },
+    "on_item_condition": {
+        "type": "origins:nbt",
+        "nbt": "{Potion:\"minecraft:water\",CustomPotionEffects:[{Id:12,Duration:200}],display:{Name:\"\\\"Fire Resistance brew\\\"\"}}"
+    },
+    "result": {
+        "item": "minecraft:lingering_potion",
+        "amount": 1,
+        "tag": "{Potion:\"minecraft:water\",CustomPotionEffects:[{Id:12,Duration:4800}],display:{Name:\"\\\"Fire Resistance Elixir\\\"\"}}"
+    },
+    "result_from_on_stack": 1,
+    "using_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "on_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "entity_action": {
+        "type": "origins:trigger_cooldown",
+        "power": "witches_of_origins:passive/brewery"
+    }
+}

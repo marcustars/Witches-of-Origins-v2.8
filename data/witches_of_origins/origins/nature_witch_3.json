@@ -1,0 +1,21 @@
+{
+    "name": "Witch of Nature III",
+    "description": "Mother Nature adopted you as one of their own.\n\nShe taught you her ancient love and took care of your roots, and your serene charisma harnessed its powers.\n",
+    "powers": [
+        "witches_of_origins:active/bloom",
+        "witches_of_origins:passive/flower_dance",
+        "witches_of_origins:mobility/grappling_hook_/grappling_hook",
+        "witches_of_origins:mobility/grappling_hook_/grappling_hook_dash",
+        "witches_of_origins:mobility/grappling_hook_/grappling_hook_item",
+        "witches_of_origins:mobility/grappling_hook_/grappling_hook_falling",
+        "witches_of_origins:rune1/natures_blessing",
+        "witches_of_origins:rune2/grounded"
+    ],
+    "icon": {
+        "item": "minecraft:blue_orchid",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 20,
+    "impact": 2
+}

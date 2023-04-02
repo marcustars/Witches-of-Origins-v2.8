@@ -1,0 +1,44 @@
+{
+    "name": "Elven Accuracy",
+    "description": "Cutting-edge arcane technology you developed in the Elven Realm for the Queen's archers. Works wonders!\n\nConjures an incendiary arrow.\n",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 50,
+        "block": false,
+        "entity": true,
+        "shape_type": "collider",
+        "fluid_handling": "any",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:explode",
+                "power": 1,
+                "destruction_type": "none",
+                "damage_self": true,
+                "create_fire": true
+            }
+        },
+        "before_action": {
+            "type": "origins:play_sound",
+            "sound": "entity.skeleton.shoot",
+            "volume": 1,
+            "pitch": 1
+        },
+        "hit_action": {
+            "type": "origins:play_sound",
+            "sound": "entity.arrow.hit_player",
+            "volume": 1,
+            "pitch": 1
+        },
+        "command_along_ray": "particle minecraft:crit ~ ~ ~ 0.25 0.25 0.25 0 5",
+        "command_step": 1
+    },
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 2
+    },
+    "key": "primary"
+}

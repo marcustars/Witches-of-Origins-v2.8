@@ -1,0 +1,19 @@
+{
+    "name": "Rain Affinity",
+    "description": "Grants speed effect when exposed to rain... or snow.\n",
+    "condition": {
+        "type": "origins:in_rain"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:speed",
+        "duration": 100,
+        "amplifier": 1,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

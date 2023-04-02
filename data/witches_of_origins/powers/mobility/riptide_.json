@@ -1,0 +1,71 @@
+{
+    "name": "Riptide",
+    "description": "Using water as your source of power, the possibilities are endless! When soaked like a sponge, you feel the rush as if underwater.\n\nSoak yourself by submerging in water or staying in the rain, then use the ability to launch yourself forward.\n",
+    "type": "origins:multiple",
+    "water_meter": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 16
+        }
+    },
+    "water_meter_charging": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 40,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_water_meter",
+            "change": 10,
+            "operation": "add"
+        }
+    },
+    "water_riptide": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_water_meter",
+            "comparison": ">=",
+            "compare_to": 30
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "z": 3,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_water_meter",
+                    "change": -30,
+                    "operation": "add"
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 10
+        },
+        "key": "primary"
+    }
+}

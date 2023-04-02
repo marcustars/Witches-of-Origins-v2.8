@@ -1,0 +1,10 @@
+{
+    "name": "Multiboots",
+    "description": "Another esoteric artifact from a dimension far away... It was supposed to aid you when climbing, but a mistake in their forge gave them the ability to climb thin air!\n\nWhen equipped, grants air swimming and block phasing skills.\n",
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "minecraft:leather_boots",
+        "amount": 1,
+        "tag": "{Unbreakable:1,display:{color:8425699,Name:'[{\"text\":\"Multiboots\"}]',Lore:['[{\"text\":\"The first gadget you managed\",\"italic\":false}]','[{\"text\":\"to tinker. It fills you with\",\"italic\":false}]','[{\"text\":\"determination\",\"italic\":true}]']},Enchantments:[{id:feather_falling,lvl:5}]}"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Witch of Storms II",
+    "description": "How changing is the world when you add a little bit of water, isn't it?\n\nPrecipitations could belong to science, but for you, they're the source of your flashing powers.\n",
+    "powers": [
+        "witches_of_origins:active/thunder_bolt",
+        "witches_of_origins:passive/rain_affinity",
+        "witches_of_origins:mobility/cloud_in_a_bottle",
+        "witches_of_origins:rune1/weather_change/weather_change",
+        "witches_of_origins:rune1/weather_change/weather_clear",
+        "witches_of_origins:rune1/weather_change/weather_thunder"
+    ],
+    "icon": {
+        "item": "minecraft:spyglass",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 21,
+    "impact": 3
+}

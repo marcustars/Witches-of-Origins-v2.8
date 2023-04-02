@@ -1,0 +1,20 @@
+{
+    "name": "Water Affinity",
+    "description": "Grants water breathing effect when submerged in water.\n",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:water_breathing",
+        "duration": 100,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Witch of Water II",
+    "description": "As water flows, it sorts obstacles, it finds its goals.\n\nThe ocean will always be your place. From all bodies of water, it sources your energy and boosts your merm-like skills.",
+    "powers": [
+        "witches_of_origins:active/bubble",
+        "witches_of_origins:passive/water_affinity",
+        "witches_of_origins:rune1/oceans_blessing",
+        "witches_of_origins:mobility/riptide_"
+    ],
+    "icon": {
+        "item": "minecraft:heart_of_the_sea",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 29,
+    "impact": 2
+}

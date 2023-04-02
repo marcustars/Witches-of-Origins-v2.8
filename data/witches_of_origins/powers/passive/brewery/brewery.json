@@ -1,0 +1,11 @@
+{
+    "name": "Brewery",
+    "description": "Being basic is not always bad, especially if you're in need of magic. With the power of default flowers, you can step up your potion brewing skills.\n\nYou are able to make potions by right clicking a water bottle with a suitable flower in your inventory.\n",
+    "type": "origins:cooldown",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 12
+    }
+}

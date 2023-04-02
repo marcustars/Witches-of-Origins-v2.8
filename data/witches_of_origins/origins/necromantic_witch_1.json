@@ -1,0 +1,16 @@
+{
+    "name": "Witch of Necromancy I",
+    "description": "It feels so good being resurrected, that's what I normally hear from my minions.\n\nDark Arts and Summoning Magic take ages to master, but to a master like you, they can become essential knowledge in a matter of seconds.\n",
+    "powers": [
+        "witches_of_origins:active/summoning",
+        "witches_of_origins:passive/undeads_bestie/undeads_bestie",
+        "witches_of_origins:passive/undeads_bestie/undeads_bestie_",
+        "witches_of_origins:passive/undeads_bestie/undeads_immunity"
+    ],
+    "icon": {
+        "item": "minecraft:wither_skeleton_skull",
+        "amount": 1
+    },
+    "order": 10,
+    "impact": 3
+}

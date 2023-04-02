@@ -1,0 +1,14 @@
+{
+    "name": "Witch of Fire I",
+    "description": "Controlling one of the elements can be overwhelming... sometimes.\n\nAs the Fire Witch, you tapped into The Nether for powerful energy, becoming one with the flames and cinders.\n",
+    "powers": [
+        "witches_of_origins:active/fire_breath",
+        "witches_of_origins:passive/fire_immunity"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_powder",
+        "amount": 1
+    },
+    "order": 9,
+    "impact": 3
+}

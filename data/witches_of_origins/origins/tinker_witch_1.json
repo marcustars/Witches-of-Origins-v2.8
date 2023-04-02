@@ -1,0 +1,16 @@
+{
+    "name": "The Tinkerer Witch I",
+    "description": "All you need is faith, trust, and a little bit of pixie dust.\n\nCrafting all kinds of arcane trinkets and tinkering esoteric tools gave you mystical abilities, use them to your advantage!",
+    "powers": [
+        "witches_of_origins:active/elven_accuracy",
+        "witches_of_origins:passive/hasty_tinkerer",
+        "witches_of_origins:passive/lens/lens_of_truth",
+        "witches_of_origins:passive/lens/lens_of_truth_item"
+    ],
+    "icon": {
+        "item": "minecraft:crafting_table",
+        "amount": 1
+    },
+    "order": 3,
+    "impact": 3
+}

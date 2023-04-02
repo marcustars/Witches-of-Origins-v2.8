@@ -1,0 +1,41 @@
+{
+    "origins": [
+        "witches_of_origins:basic_witch_1",
+        "witches_of_origins:basic_witch_2",
+        "witches_of_origins:basic_witch_3",
+        "witches_of_origins:fire_witch_1",
+        "witches_of_origins:fire_witch_2",
+        "witches_of_origins:fire_witch_3",
+        "witches_of_origins:frost_witch_1",
+        "witches_of_origins:frost_witch_2",
+        "witches_of_origins:frost_witch_3",
+        "witches_of_origins:nature_witch_1",
+        "witches_of_origins:nature_witch_2",
+        "witches_of_origins:nature_witch_3",
+        "witches_of_origins:necromantic_witch_1",
+        "witches_of_origins:necromantic_witch_2",
+        "witches_of_origins:necromantic_witch_3",
+        "witches_of_origins:storm_witch_1",
+        "witches_of_origins:storm_witch_2",
+        "witches_of_origins:storm_witch_3",
+        "witches_of_origins:tamer_witch_1",
+        "witches_of_origins:tamer_witch_2",
+        "witches_of_origins:tamer_witch_3",
+        "witches_of_origins:time_witch_1",
+        "witches_of_origins:time_witch_2",
+        "witches_of_origins:time_witch_3",
+        "witches_of_origins:tinker_witch_1",
+        "witches_of_origins:tinker_witch_2",
+        "witches_of_origins:tinker_witch_3",
+        "witches_of_origins:water_witch_1",
+        "witches_of_origins:water_witch_2",
+        "witches_of_origins:water_witch_3",
+        "witches_of_origins:test_witch"
+    ],
+    "enabled": true,
+    "replace": true,
+    "gui_title": {
+        "choose_origin": "Choose area of expertise",
+        "view_origin": "View area of expertise"
+    }
+}

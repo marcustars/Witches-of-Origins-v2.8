@@ -1,0 +1,23 @@
+{
+    "name": "The Tinkerer Witch III",
+    "description": "All you need is faith, trust, and a little bit of pixie dust.\n\nCrafting all kinds of arcane trinkets and tinkering esoteric tools gave you mystical abilities, use them to your advantage!",
+    "powers": [
+        "witches_of_origins:active/elven_accuracy",
+        "witches_of_origins:passive/hasty_tinkerer",
+        "witches_of_origins:passive/lens/lens_of_truth",
+        "witches_of_origins:passive/lens/lens_of_truth_item",
+        "witches_of_origins:rune1/kaboom",
+        "witches_of_origins:rune1/tinker/craft_saddle",
+        "witches_of_origins:rune1/tinker/craft_nametag",
+        "witches_of_origins:mobility/multiboots/multiboots",
+        "witches_of_origins:mobility/multiboots/multiboots_climb",
+        "witches_of_origins:mobility/multiboots/multiboots_speed"
+    ],
+    "icon": {
+        "item": "minecraft:crafting_table",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 28,
+    "impact": 3
+}

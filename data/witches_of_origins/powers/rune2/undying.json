@@ -1,0 +1,57 @@
+{
+    "name": "Undying",
+    "description": "Harnessing the essence of the Totem of Undying you stole from the Evokers, might give you a better understanding on the eternal threat: Where does the life that you take come from?\n\nGain a totem of undying effect upon inminent death.\n",
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 5
+    },
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:regeneration",
+                        "duration": 900,
+                        "amplifier": 2,
+                        "show_particles": false,
+                        "show_icon": false
+                    },
+                    {
+                        "effect": "minecraft:absorption",
+                        "duration": 100,
+                        "amplifier": 2,
+                        "show_particles": false,
+                        "show_icon": false
+                    },
+                    {
+                        "effect": "minecraft:fire_resistance",
+                        "duration": 800,
+                        "amplifier": 1,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                ]
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:totem_of_undying ~ ~ ~ 1 1 1 0 10"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "item.totem.use",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 400,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 6
+    }
+}

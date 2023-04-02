@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Witches of Origins v2.8",
+        "id": "witches_of_origins",
+        "pack_format": 10,
+        "authors": [
+            "marcustars",
+            "Peterlajos"
+        ],
+        "description": "This datapack aims to bring a variety of magical origins revolving Witches and their spells, gadgets and other perks.\n\nInspired by WitchCraftSMP"
+    }
+}

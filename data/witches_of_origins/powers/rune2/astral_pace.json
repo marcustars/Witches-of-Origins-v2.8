@@ -1,0 +1,100 @@
+{
+    "name": "Astral Pace",
+    "description": "Unleash the full potential of the cosmos, anything can now be anywhere, all at once.\n\nMobs that attack you will be glitched within space-time continuum.\n",
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "radius": 10,
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:choice",
+                        "actions": [
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:add_velocity",
+                                    "z": -5,
+                                    "space": "local_horizontal",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:apply_effect",
+                                    "effect": {
+                                        "effect": "minecraft:levitation",
+                                        "duration": 60,
+                                        "amplifier": 5,
+                                        "show_particles": false,
+                                        "show_icon": false
+                                    }
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:explode",
+                                    "power": 2,
+                                    "destruction_type": "none",
+                                    "damage_self": false,
+                                    "create_fire": true
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:set_on_fire",
+                                    "duration": 10
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:add_velocity",
+                                    "x": -5,
+                                    "space": "local_horizontal",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:add_velocity",
+                                    "x": 5,
+                                    "space": "local_horizontal",
+                                    "client": true,
+                                    "server": true
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "element": {
+                                    "type": "origins:add_velocity",
+                                    "z": 5,
+                                    "space": "local_horizontal",
+                                    "client": true,
+                                    "server": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "particle minecraft:nautilus ~ ~1 ~ 2 0.5 2 0 20"
+                    }
+                }
+            ]
+        }
+    },
+    "cooldown": 1
+}

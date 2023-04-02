@@ -1,0 +1,16 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:lava"
+        },
+        "type": "origins:swimming"
+    },
+    "l1": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 15
+    }
+}

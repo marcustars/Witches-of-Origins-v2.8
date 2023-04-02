@@ -1,0 +1,27 @@
+{
+    "name": "The Good Witch I",
+    "description": "You just discovered your powers. You hate them.\n\nUsed to the hustle and bustle of the village, you know how to take care of others with your simple but effective potions.\n",
+    "powers": [
+        "witches_of_origins:active/splash_potion",
+        "witches_of_origins:passive/brewery/brewery",
+        "witches_of_origins:passive/brewery/allium",
+        "witches_of_origins:passive/brewery/azure",
+        "witches_of_origins:passive/brewery/cornflower",
+        "witches_of_origins:passive/brewery/daisy",
+        "witches_of_origins:passive/brewery/dandelion",
+        "witches_of_origins:passive/brewery/lily",
+        "witches_of_origins:passive/brewery/orchid",
+        "witches_of_origins:passive/brewery/poppy",
+        "witches_of_origins:passive/brewery/tulips_orange",
+        "witches_of_origins:passive/brewery/tulips_pink",
+        "witches_of_origins:passive/brewery/tulips_white",
+        "witches_of_origins:passive/brewery/tulips_red",
+        "witches_of_origins:passive/brewery/wither_rose"
+    ],
+    "icon": {
+        "item": "minecraft:experience_bottle",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 2
+}

@@ -1,0 +1,42 @@
+{
+    "name": "The Good Witch II",
+    "description": "You just discovered your powers. You hate them.\n\nUsed to the hustle and bustle of the village, you know how to take care of others with your simple but effective potions.\n",
+    "powers": [
+        "witches_of_origins:active/splash_potion",
+        "witches_of_origins:rune1/basic/invisibility_",
+        "witches_of_origins:rune1/basic/invisibility_power",
+        "witches_of_origins:rune1/basic/invisibility_toggled",
+        "witches_of_origins:mobility/trusty_broom",
+        "witches_of_origins:passive/brewery/brewery",
+        "witches_of_origins:passive/brewery/allium",
+        "witches_of_origins:passive/brewery/azure",
+        "witches_of_origins:passive/brewery/cornflower",
+        "witches_of_origins:passive/brewery/daisy",
+        "witches_of_origins:passive/brewery/dandelion",
+        "witches_of_origins:passive/brewery/lily",
+        "witches_of_origins:passive/brewery/orchid",
+        "witches_of_origins:passive/brewery/poppy",
+        "witches_of_origins:passive/brewery/tulips_orange",
+        "witches_of_origins:passive/brewery/tulips_pink",
+        "witches_of_origins:passive/brewery/tulips_white",
+        "witches_of_origins:passive/brewery/tulips_red",
+        "witches_of_origins:passive/brewery/wither_rose",
+        "witches_of_origins:rune1/improved_potions/brewery_2",
+        "witches_of_origins:rune1/improved_potions/blindness_elixir",
+        "witches_of_origins:rune1/improved_potions/fire_elixir",
+        "witches_of_origins:rune1/improved_potions/jump_elixir",
+        "witches_of_origins:rune1/improved_potions/night_vision_elixir",
+        "witches_of_origins:rune1/improved_potions/poison_elixir",
+        "witches_of_origins:rune1/improved_potions/regen_elixir",
+        "witches_of_origins:rune1/improved_potions/saturation_elixir",
+        "witches_of_origins:rune1/improved_potions/weakness_elixir",
+        "witches_of_origins:rune1/improved_potions/wither_elixir"
+    ],
+    "icon": {
+        "item": "minecraft:experience_bottle",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 13,
+    "impact": 2
+}

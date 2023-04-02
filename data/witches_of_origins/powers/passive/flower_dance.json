@@ -1,0 +1,105 @@
+{
+    "name": "Flower Dance",
+    "description": "The way flowers dance in the wind always amazed you, and it provided great knowledge.\n\nSneak-right click with an empty hand to grow plants in nearby suitable blocks.\n",
+    "type": "origins:multiple",
+    "solar_meter": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 14
+        }
+    },
+    "solar_meter_charging": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:action_over_time",
+        "interval": 3,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_solar_meter",
+                    "change": 1,
+                    "operation": "add"
+                }
+            ]
+        }
+    },
+    "flower_dance": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_solar_meter",
+                    "comparison": ">=",
+                    "compare_to": 15
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:action_on_block_use",
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_solar_meter",
+                    "change": -15,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:falling_spore_blossom ~ ~ ~ 1 1 1 0 20"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.nether_sprouts.place",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:offset",
+                    "action": {
+                        "type": "origins:bonemeal",
+                        "effects": false
+                    },
+                    "y": 1
+                },
+                {
+                    "type": "origins:offset",
+                    "action": {
+                        "type": "origins:bonemeal",
+                        "effects": false
+                    },
+                    "y": 0
+                },
+                {
+                    "type": "origins:offset",
+                    "action": {
+                        "type": "origins:bonemeal",
+                        "effects": true
+                    },
+                    "y": -1
+                }
+            ]
+        },
+        "action_result": "success"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Witch of Time I",
+    "description": "Forever is sometimes just a second.\n\nYour inner clock resonates with the energy from the celestial bodies of our universe, allowing you to sometimes... skip a beat... and blink forward.\n",
+    "powers": [
+        "witches_of_origins:active/timetravel",
+        "witches_of_origins:passive/selenic_strength",
+        "witches_of_origins:passive/solar_swiftness"
+    ],
+    "icon": {
+        "item": "minecraft:clock",
+        "amount": 1
+    },
+    "order": 4,
+    "impact": 3
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Weather'o'mancy",
+    "description": "Weather changing rituals are quite cliche, but they're useful in certain conditions!\n\nSummons a Thunderstorm... or Sunny skies!",
+    "hidden": true,
+    "type": "origins:simple"
+}

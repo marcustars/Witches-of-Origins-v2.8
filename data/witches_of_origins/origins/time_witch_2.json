@@ -1,0 +1,20 @@
+{
+    "name": "Witch of Time II",
+    "description": "Forever is sometimes just a second.\n\nYour inner clock resonates with the energy from the celestial bodies of our universe, allowing you to sometimes... skip a beat... and blink forward.\n",
+    "powers": [
+        "witches_of_origins:active/timetravel",
+        "witches_of_origins:passive/selenic_strength",
+        "witches_of_origins:passive/solar_swiftness",
+        "witches_of_origins:rune1/space_blink",
+        "witches_of_origins:rune1/warp_time/warp_time",
+        "witches_of_origins:rune1/warp_time/warp_time_day",
+        "witches_of_origins:rune1/warp_time/warp_time_night"
+    ],
+    "icon": {
+        "item": "minecraft:clock",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 25,
+    "impact": 3
+}

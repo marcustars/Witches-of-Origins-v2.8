@@ -1,0 +1,23 @@
+{
+    "name": "Undead's Bestie",
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team join summoner @e[type=minecraft:husk]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join summoner @e[type=minecraft:drowned]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join summoner @e[type=minecraft:zombie]"
+            }
+        ]
+    }
+}

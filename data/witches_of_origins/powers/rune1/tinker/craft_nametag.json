@@ -1,0 +1,23 @@
+{
+    "hidden": true,
+    "type": "origins:recipe",
+    "recipe": {
+        "id": "1",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "minecraft:lead"
+            },
+            {
+                "item": "minecraft:paper"
+            },
+            {
+                "item": "minecraft:diamond"
+            }
+        ],
+        "result": {
+            "item": "minecraft:name_tag",
+            "count": 1
+        }
+    }
+}

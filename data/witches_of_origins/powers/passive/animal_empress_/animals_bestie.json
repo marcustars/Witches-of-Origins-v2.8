@@ -1,0 +1,82 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:zombified_piglin]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:piglin]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:hoglin]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:zoglin]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:piglin_brute]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:cave_spider]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:spider]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:silverfish]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:endermite]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:bee]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:llama]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:trader_llama]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:polar_bear]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:goat]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:guardian]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:elder_guardian]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:pufferfish]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join animals @e[type=minecraft:wolf]"
+            }
+        ]
+    }
+}

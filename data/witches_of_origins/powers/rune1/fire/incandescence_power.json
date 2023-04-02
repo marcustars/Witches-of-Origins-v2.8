@@ -1,0 +1,27 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:on_fire"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effects": [
+        {
+            "effect": "minecraft:speed",
+            "duration": 100,
+            "amplifier": 2,
+            "show_particles": false,
+            "show_icon": false
+        },
+        {
+            "effect": "minecraft:strength",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ]
+}

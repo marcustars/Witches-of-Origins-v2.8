@@ -1,0 +1,19 @@
+{
+    "name": "Undead's Bestie",
+    "description": "You made them a favour by returning them from the no-life, did you expect them to attack you? They also told their friends about it...\n\nUndead entities won't target or damage you.\n",
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": false,
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team add summoner"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join summoner @s"
+            }
+        ]
+    }
+}

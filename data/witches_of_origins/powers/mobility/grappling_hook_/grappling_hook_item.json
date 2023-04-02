@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "gofish:slime_rod",
+        "amount": 1,
+        "tag": "{Unbreakable:1,display:{color:8425699,Name:'[{\"text\":\"Rose-thorn Vine\"}]',Lore:['[{\"text\":\"These thorns have\",\"italic\":false}]','[{\"text\":\"great grip on any block!\",\"italic\":false}]','[{\"text\":\"Use it to your advantage\",\"italic\":true}]']},Enchantments:[{id:lure,lvl:5}]}"
+    }
+}

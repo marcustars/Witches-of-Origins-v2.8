@@ -1,0 +1,52 @@
+{
+    "name": "Kaboom!",
+    "description": "Explosions are a Tinkerer's best method to gather materials, just keep your distance.\n\nLeft click a block to place a bomb. Use the ability to detonate it remotely for 5 seconds!\n",
+    "type": "origins:multiple",
+    "create_bomb": {
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "type": "origins:action_on_block_use",
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "summon minecraft:marker ~ ~ ~ {Tags: [\"explosive_block\"]}"
+        },
+        "action_result": "success"
+    },
+    "detonate_bomb": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[tag=explosive_block] run summon tnt"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "kill @e[tag=explosive_block]"
+                    },
+                    "ticks": 1
+                }
+            ]
+        },
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true
+        },
+        "key": "secondary"
+    },
+    "remove_inactive_bomb": {
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "kill @e[tag=explosive_block]"
+        }
+    }
+}

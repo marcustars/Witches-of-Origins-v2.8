@@ -1,0 +1,25 @@
+{
+    "name": "Witch of Beasts III",
+    "description": "The most famous animal match-maker in town!\n\nYou understood the language of animals since an early age, and as equals they treated you and revealed their lifes to you.\n",
+    "powers": [
+        "witches_of_origins:active/lone_wolf",
+        "witches_of_origins:passive/beast_tamer",
+        "witches_of_origins:passive/animal_empress_/animal_empress",
+        "witches_of_origins:passive/animal_empress_/animals_bestie",
+        "witches_of_origins:passive/animal_empress_/animal_empress_fatigue",
+        "witches_of_origins:rune1/mythical_mounts",
+        "witches_of_origins:mobility/animal_empress_2_/animal_empress_2",
+        "witches_of_origins:mobility/animal_empress_2_/animal_empress_2_invulnerable",
+        "witches_of_origins:rune2/animal_instinct_/animal",
+        "witches_of_origins:rune2/animal_instinct_/animal_instinct",
+        "witches_of_origins:rune2/animal_instinct_/animal_instinct_",
+        "witches_of_origins:rune2/animal_instinct_/animal_instinct__"
+    ],
+    "icon": {
+        "item": "minecraft:rabbit_hide",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 24,
+    "impact": 2
+}

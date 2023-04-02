@@ -1,0 +1,22 @@
+{
+    "name": "Ghastly Teleportation",
+    "description": "This necromantic ritual is among the most useful! Summoning yourself at a desired location, with the added chance to scare your foes, is everything a Necromantic Witch can ask for!\n\nTeleports up to 20 blocks away. When looking at an entity, teleports you behind said entity.\n",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 30,
+        "block": true,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "command_at_hit": "function witches_of_origins:behind",
+        "command_step": 0.25
+    },
+    "cooldown": 60,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 0
+    },
+    "key": "secondary"
+}

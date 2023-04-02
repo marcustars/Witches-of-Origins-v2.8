@@ -1,0 +1,16 @@
+{
+    "name": "Hasty Tinkerer",
+    "description": "With all those ideas in your mind, you need to start tinkering quickly! You don't want them to fall into the forgotten void.\n\nGrants permanent haste effect.\n",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:haste",
+        "duration": 100,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

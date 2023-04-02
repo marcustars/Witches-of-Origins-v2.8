@@ -1,0 +1,18 @@
+{
+    "name": "Witch of Fire II",
+    "description": "Controlling one of the elements can be overwhelming... sometimes.\n\nAs the Fire Witch, you tapped into The Nether for powerful energy, becoming one with the flames and cinders.\n",
+    "powers": [
+        "witches_of_origins:active/fire_breath",
+        "witches_of_origins:passive/fire_immunity",
+        "witches_of_origins:mobility/jetpack",
+        "witches_of_origins:rune1/fire/incandescence",
+        "witches_of_origins:rune1/fire/incandescence_power"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_powder",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 15,
+    "impact": 3
+}

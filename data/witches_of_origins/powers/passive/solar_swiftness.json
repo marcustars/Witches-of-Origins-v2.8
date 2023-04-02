@@ -1,0 +1,21 @@
+{
+    "name": "Solar Swiftness",
+    "description": "Condense the power of the Sun...\n\nGrants speed on day time.\n",
+    "condition": {
+        "type": "origins:time_of_day",
+        "comparison": "<=",
+        "compare_to": 11998
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:speed",
+        "duration": 100,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Charged Up",
+    "description": "Playing with lightning can be dangerous... You can end up like a charged creeper.\n\nMobs that attack you will be knocked back away from you and struck by lightning.\n",
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "z": -5,
+                "space": "local_horizontal",
+                "client": true,
+                "server": true
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:lightning_bolt ~ ~ ~"
+            }
+        ]
+    },
+    "cooldown": 1
+}

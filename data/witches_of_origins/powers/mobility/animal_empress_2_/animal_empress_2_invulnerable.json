@@ -1,0 +1,12 @@
+{
+    "hidden": true,
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:passenger_recursive",
+            "comparison": ">=",
+            "compare_to": 1
+        }
+    }
+}

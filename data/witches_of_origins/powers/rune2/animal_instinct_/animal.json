@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "minecraft:leather_boots",
+        "amount": 1,
+        "tag": "{Unbreakable:1,display:{color:8425699,Name:'[{\"text\":\"Animal Instinct\"}]',Lore:['[{\"text\":\"The animals bestowed upon\",\"italic\":false}]','[{\"text\":\"you their grace,\",\"italic\":false}]','[{\"text\":\"great Empress.\",\"italic\":true}]']},Enchantments:[{id:feather_falling,lvl:5}]}"
+    }
+}

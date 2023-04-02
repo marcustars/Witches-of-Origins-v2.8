@@ -1,0 +1,10 @@
+{
+    "name": "Snow Storm",
+    "description": "You found the secrets to the instant solidification of water vapour, and you were ruthless with how you used it against your enemies.\n\nWhen hit, your attackers suffer an internal snow storm getting frozen in place.\n",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.quinary_active"
+    },
+    "retain_state": false
+}

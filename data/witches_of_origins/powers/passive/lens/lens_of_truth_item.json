@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:starting_equipment",
+    "stack": {
+        "item": "minecraft:spyglass",
+        "amount": 1,
+        "tag": "{Unbreakable:1,display:{Name:'[{\"text\":\"Lens of Truth\"}]',Lore:['[{\"text\":\"Reveal the unseen.\",\"italic\":false}]']}}"
+    }
+}

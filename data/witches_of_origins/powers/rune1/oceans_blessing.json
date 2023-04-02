@@ -1,0 +1,20 @@
+{
+    "name": "Ocean's Blessing",
+    "description": "As you grew up in the ocean, you learnt everything has their own function and service there. Your magical abilities will be forever praised in your home-reef,\n\nGrants Dolphin's Grace effect when submerged in water.\n",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:dolphins_grace",
+        "duration": 100,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

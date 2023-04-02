@@ -1,0 +1,8 @@
+{
+    "name": "Fire Immunity",
+    "description": "As the master of the fire element, you are immune to fire.\n",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:fire"
+    }
+}

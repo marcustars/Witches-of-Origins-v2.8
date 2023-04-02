@@ -1,0 +1,28 @@
+{
+    "name": "The Heart of the Devil",
+    "description": "The nether is the source of your flamant integrity, and tapping into its source of energy is only going to increase it.\n\nGain 10 hearts when on fire or in the nether.\n",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether"
+            },
+            {
+                "type": "origins:on_fire"
+            }
+        ]
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 199,
+    "effect": {
+        "effect": "minecraft:absorption",
+        "duration": 100,
+        "amplifier": 4,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

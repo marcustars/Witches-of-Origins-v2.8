@@ -1,0 +1,34 @@
+{
+    "name": "Weather'o'mancy",
+    "hidden": true,
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "weather thunder"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:electric_spark ~ ~1 ~ 2 0.5 2 0 20"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "block.conduit.activate",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 6000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 16
+    },
+    "key": "secondary"
+}

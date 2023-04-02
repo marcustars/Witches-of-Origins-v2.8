@@ -1,0 +1,54 @@
+{
+    "name": "Cloud in a Bottle",
+    "description": "Never thought this spell would make it to these realms... Cloud Casting has its advantages! Specially when they materialize just below your feet.\n\nGrants cloud-jumps mid-air at the expense of hunger.\n",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:air"
+                }
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "space": "world",
+                "client": true,
+                "server": true
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 0.5,
+                "space": "local_horizontal",
+                "client": true,
+                "server": true
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:cloud ~ ~ ~ 0.5 0.5 0.5 0 5"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.llama.spit",
+                "volume": 0.3,
+                "pitch": 1
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 3
+            }
+        ]
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.origins.ternary_active"
+    }
+}

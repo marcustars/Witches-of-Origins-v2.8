@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "hidden": true,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "witches_of_origins:passive/frost_walker_/frost_walker_toggle"
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 minecraft:frosted_ice replace water[level=0]"
+    }
+}

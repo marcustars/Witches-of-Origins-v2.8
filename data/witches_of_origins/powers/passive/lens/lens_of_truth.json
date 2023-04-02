@@ -1,0 +1,17 @@
+{
+    "name": "Lens of Truth",
+    "description": "This arcane trinket holds great power to its bearer. It can reveal the unseen, target the invisible...\n\nHold the Lens of Truth in your offhand to reveal nearby entities.\n",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "type": "origins:nbt",
+            "nbt": "{Unbreakable:1,display:{Name:'[{\"text\":\"Lens of Truth\"}]',Lore:['[{\"text\":\"Reveal the unseen.\",\"italic\":false}]']}}"
+        }
+    },
+    "type": "origins:entity_glow",
+    "use_teams": false,
+    "red": 1,
+    "green": 1,
+    "blue": 0
+}

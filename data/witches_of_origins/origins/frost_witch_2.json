@@ -1,0 +1,17 @@
+{
+    "name": "Witch of Frost II",
+    "description": "The cold never bothered you anyways.\n\nRaised among polar bears, in the heights of great mountain peaks and frozen tundras, you learnt the way of the snow.\n",
+    "powers": [
+        "witches_of_origins:active/frost_beam",
+        "witches_of_origins:passive/frost_walker_/frost_walker",
+        "witches_of_origins:passive/frost_walker_/frost_walker_toggle",
+        "witches_of_origins:rune1/frozen_shield"
+    ],
+    "icon": {
+        "item": "minecraft:packed_ice",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 17,
+    "impact": 2
+}

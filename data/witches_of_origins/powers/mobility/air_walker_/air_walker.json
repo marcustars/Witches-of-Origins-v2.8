@@ -1,0 +1,28 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "l0": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "witches_of_origins:mobility/air_walker_/air_walker_toggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @p run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 snow_block keep"
+        }
+    },
+    "l1": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "witches_of_origins:mobility/air_walker_/air_walker_toggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @p run fill ~10 ~5 ~10 ~-10 ~-5 ~-10 air replace snow_block"
+        }
+    }
+}

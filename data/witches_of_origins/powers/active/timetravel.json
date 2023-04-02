@@ -1,0 +1,53 @@
+{
+    "name": "Timetravel",
+    "description": "Space-time holds no secrets to you, but your enemies will fear the celestial bodies when they experience the clash of dimensions in their own skin... literally.\n\nCast a projectile that pushes the target away in space-time.\n",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 50,
+        "block": false,
+        "entity": true,
+        "shape_type": "collider",
+        "fluid_handling": "any",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "z": -3,
+                        "space": "local_horizontal",
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:damage",
+                        "amount": 4,
+                        "source": {
+                            "name": "magic.player",
+                            "magic": true
+                        }
+                    }
+                }
+            ]
+        },
+        "before_action": {
+            "type": "origins:play_sound",
+            "sound": "item.chorus_fruit.teleport",
+            "volume": 1,
+            "pitch": 1
+        },
+        "command_along_ray": "particle minecraft:portal ~ ~ ~ 0.25 0.25 0.25 0 5"
+    },
+    "cooldown": 60,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 9
+    },
+    "key": "primary"
+}

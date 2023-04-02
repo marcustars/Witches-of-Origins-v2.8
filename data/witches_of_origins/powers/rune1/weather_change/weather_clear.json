@@ -1,0 +1,34 @@
+{
+    "name": "Weather'o'mancy",
+    "description": "Weather changing rituals are quite cliche, but they're useful in certain conditions!\n\nSummons a Thunderstorm... or Sunny skies!",
+    "condition": {
+        "type": "origins:in_rain"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "weather clear"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:happy_villager ~ ~1 ~ 2 0.5 2 0 50"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "block.conduit.deactivate",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 6000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 24
+    },
+    "key": "secondary"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Witch of Storms I",
+    "description": "How changing is the world when you add a little bit of water, isn't it?\n\nPrecipitations could belong to science, but for you, they're the source of your flashing powers.\n",
+    "powers": [
+        "witches_of_origins:active/thunder_bolt",
+        "witches_of_origins:passive/rain_affinity"
+    ],
+    "icon": {
+        "item": "minecraft:spyglass",
+        "amount": 1
+    },
+    "order": 6,
+    "impact": 3
+}

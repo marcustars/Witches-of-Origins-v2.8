@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition": {
+                    "type": "origins:nbt",
+                    "nbt": "{Unbreakable:1,display:{color:8425699,Name:'[{\"text\":\"Multiboots\"}]',Lore:['[{\"text\":\"The first gadget you managed\",\"italic\":false}]','[{\"text\":\"to tinker. It fills you with\",\"italic\":false}]','[{\"text\":\"determination\",\"italic\":true}]']},Enchantments:[{id:feather_falling,lvl:5}]}"
+                }
+            }
+        ]
+    },
+    "type": "origins:swimming"
+}

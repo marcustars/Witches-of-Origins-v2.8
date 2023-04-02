@@ -1,0 +1,10 @@
+{
+    "name": "Air Walker",
+    "description": "Frost magic can reach levels of majesty easily. By freezing water vapour under your feet, you can create a temporary block of snow.\n\nToggleable ability.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.quaternary_active"
+    },
+    "retain_state": false
+}

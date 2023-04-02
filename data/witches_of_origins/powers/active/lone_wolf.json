@@ -1,0 +1,31 @@
+{
+    "name": "Lone Wolf",
+    "description": "The most loyal of Beasts, yet one of the most easy to befriend. The wolf follows you as one of their pack.\n\nSummons an lone wolf.\n",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:wolf ~1 ~ ~1"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:heart ~ ~ ~ 1 1 1 0 5"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "item.crossbow.shoot",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 1200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 5
+    },
+    "key": "primary"
+}

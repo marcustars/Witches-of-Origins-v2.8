@@ -1,0 +1,90 @@
+{
+    "name": "Souldbound Shield",
+    "description": "The Nether's best kept secret, soul manipulation, but you know exactly how to extract the essence of a soul to your advantage.\n\nFrom the soul of your dead enemies, you weave a powerful shield. Use ability to activate after charging the soul meter.\n",
+    "type": "origins:multiple",
+    "soul_meter": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 15
+        }
+    },
+    "soul_meter_charging": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_soul_meter",
+                    "change": 25,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:soul ~ ~ ~ 1 1 1 0 20"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.soul_sand.break",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "cooldown": 1
+    },
+    "soulbound": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_soul_meter",
+            "comparison": ">=",
+            "compare_to": 75
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:absorption",
+                        "duration": 150,
+                        "amplifier": 4,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_soul_meter",
+                    "change": -25,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:campfire_cosy_smoke ~ ~ ~ 1 1 1 0 15"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.lava.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        },
+        "cooldown": 150,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0
+        },
+        "key": {
+            "key": "key.origins.ternary_active"
+        }
+    }
+}

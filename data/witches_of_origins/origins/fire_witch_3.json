@@ -1,0 +1,20 @@
+{
+    "name": "Witch of Fire III",
+    "description": "Controlling one of the elements can be overwhelming... sometimes.\n\nAs the Fire Witch, you tapped into The Nether for powerful energy, becoming one with the flames and cinders.\n",
+    "powers": [
+        "witches_of_origins:active/fire_breath",
+        "witches_of_origins:passive/fire_immunity",
+        "witches_of_origins:mobility/jetpack",
+        "witches_of_origins:rune1/fire/incandescence",
+        "witches_of_origins:rune1/fire/incandescence_power",
+        "witches_of_origins:rune2/heart_devil/the_heart_of_the_devil",
+        "witches_of_origins:rune2/heart_devil/the_heart_of_the_devil_2"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_powder",
+        "amount": 1
+    },
+    "unchoosable": true,
+    "order": 16,
+    "impact": 3
+}

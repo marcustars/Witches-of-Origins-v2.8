@@ -1,0 +1,10 @@
+{
+    "name": "Frost Walker",
+    "description": "Your frigid feet are capable of turning water into ice.\n\nToggleable ability.\n",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.origins.ternary_active"
+    },
+    "retain_state": true
+}

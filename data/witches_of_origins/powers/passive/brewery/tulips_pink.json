@@ -1,0 +1,34 @@
+{
+    "hidden": true,
+    "type": "origins:item_on_item",
+    "using_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:pink_tulip"
+        }
+    },
+    "on_item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    },
+    "result": {
+        "item": "minecraft:potion",
+        "amount": 1,
+        "tag": "{Potion:\"minecraft:water\",CustomPotionEffects:[{Id:18,Duration:400}],display:{Name:\"\\\"Weakness brew\\\"\"}}"
+    },
+    "result_from_on_stack": 1,
+    "using_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "on_item_action": {
+        "type": "origins:consume",
+        "amount": 1
+    },
+    "entity_action": {
+        "type": "origins:trigger_cooldown",
+        "power": "witches_of_origins:passive/brewery"
+    }
+}
